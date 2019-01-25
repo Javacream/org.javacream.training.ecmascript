@@ -39,7 +39,7 @@ d.hello();
 function Person(lastname, firstname){
 		if(!(this instanceof Person)){
 			print("called without new!");
-			return new Person();
+			return new Person(lastname, firstname);
 		}		
 		print("construcing person");
 		this.lastname = lastname;
