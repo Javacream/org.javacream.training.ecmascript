@@ -37,18 +37,23 @@ Date.prototype.hello = function(){print("Hello Date!")};
 d.hello();
 
 function Person(lastname, firstname){
-	this.lastname = lastname;
-	this.firstname = firstname;
-	this.sayHello = function(){
-		return "Hello, my name is " + this.lastname;
-	}
+		if(!(this instanceof Person)){
+			print("called without new!");
+			return new Person();
+		}		
+		print("construcing person");
+		this.lastname = lastname;
+		this.firstname = firstname;
+		this.sayHello = function(){
+			return "Hello, my name is " + this.lastname;
+		};
 }
 Person.prototype = {};
 Person.prototype.info = function(){
 	return "Person: lastname=" + this.lastname;
-}
+};
 
-var p = new Person("Sawitzki", "Rainer");
+var p = Person("Sawitzki", "Rainer");
 
 print(p.sayHello());
 print(p.info());
