@@ -41,7 +41,7 @@ function Person(lastname, firstname){
 			print("called without new!");
 			return new Person(lastname, firstname);
 		}		
-		print("construcing person");
+		print("constructing person");
 		this.lastname = lastname;
 		this.firstname = firstname;
 		this.sayHello = function(){
