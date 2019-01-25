@@ -7,7 +7,7 @@ function update(){
 	load(root + "update.js")
 	load(root + "basics.js")
 	load(root + "collections.js")
-	load(root + "utils.js")
+//	load(root + "utils.js")
 }
 
 var u = update
