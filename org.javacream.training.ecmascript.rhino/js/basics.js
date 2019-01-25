@@ -27,41 +27,11 @@ demo("A", "B")
 demo()
 
 
-function Person(lastname, firstname){
-	this.lastname = lastname;
-	this.firstname = firstname;
-	this.sayHello = function(){
-		return "Hello, my name is " + this.lastname;
-	}
-}
-Person.prototype = {}
-Person.prototype.info = function(){
-	return "Person: lastname=" + this.lastname;
-}
-
-var p = new Person("Sawitzki", "Rainer")
-
-print(p.sayHello());
-print(p.info())
-
-p.greet = function(){
-	return "Greetings from " + this.lastname; 
-}
-print(p.greet())
-
 var n1 = 42
 var n2 = new Number(42)
 var n3 = n1.constructor(42)
 print(n3)
 print (n3.constructor)
-var people = [
-	new Person("Sawitzki", "Rainer"),
-	new Person("Mustermann", "Hans"),
-	new Person("Pausenkarten", "Pascal"),
-	new Person("Metzger", "Karl"),
-]
-
-
 
 var obj = {
 
@@ -95,3 +65,8 @@ for (let i = 0; i < 10; i++){
 }
 
 print(i)
+
+var o1 = "0"
+var o2 = 0
+print("o1==o2" + (o1 == o2))
+print("o1===o2" + (o1 === o2))
