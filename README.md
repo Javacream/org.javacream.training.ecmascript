@@ -1,1 +1,3 @@
-# org.javacream.training.ecmascript.rhino
+# org.javacream.training.ecmascript
+
+Provides some samples for learning ES
