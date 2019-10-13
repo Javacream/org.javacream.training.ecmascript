@@ -1,0 +1,15 @@
+·     Javascript Grundlagen und Json
+
+·     ECMAScript 6 (ES6)— New Features, Arrow Functions , Promise …
+
+·     Object-oriented JavaScript - like class, object, static properties, constructor and inheritance with super and extends
+
+·     Namespace with ES6
+
+·     Best practice create own javascript framework / libs
+
+·     Dynamisches laden von Javascript Dateien (Files) und Klassen
+
+·     Performace - Ladezeit von Webseiten
+
+·     Javascript Security
