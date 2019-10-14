@@ -11,5 +11,12 @@ function Person(l, f, g, h) {
         this.infoAsJSON = () =>{
             return JSON.stringify(this)
         }
-        //Object.freeze(this)
 }
+
+Person.prototype = {
+    infoAsXML: function (){
+        return "irgendwas mit spitzen klammern"
+    }
+    
+}
+
