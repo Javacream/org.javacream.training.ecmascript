@@ -16,3 +16,15 @@ let person1 = {
 }
 
 console.log(person1.infoAsJSON())
+
+function classic(){
+
+}
+
+let referenceWithFunctionLiteral = function(){
+
+}
+//Moderne Variante, die Arrow-Function
+let referenceWithArrowFunction = () => {
+
+}
