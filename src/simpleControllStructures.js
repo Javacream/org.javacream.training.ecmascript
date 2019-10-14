@@ -12,7 +12,7 @@ let shouldContinue = true
 while(shouldContinue){
     let index = 0
     console.log("continuing")
-    if (index == counter){
+    if (index === counter){
         shouldContinue = false
     }{
         index++
