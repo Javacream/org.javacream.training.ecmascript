@@ -1,14 +1,16 @@
 let people = []
-let person = null
+let person
 let index = -1
-let slot = null;
-let previousButton = null;
-let nextButton = null
+let slot
+let previousButton
+let nextButton
+let peopleSlot
 function init(){
     people.push(new Person("Sawitzki", "Rainer", "m", 183))
     people.push(new Person("Meier", "Hans", "m", 198))
     people.push(new Person("Schneider", "Hanna", "f", 176))
     slot = document.getElementById("slot")
+    peopleSlot = document.getElementById("peopleSlot")
     previousButton = document.getElementById("previous")
     nextButton = document.getElementById("next")
     previousButton.setAttribute("disabled", "");
@@ -53,4 +55,15 @@ function previous(){
     updateSlot()
 }
 
+function load(){
+    fetch("http://172.17.9.17:8080/people").then((result) => result.json()).then((people) => updatePeopleSlot(people))  
+}
+function updatePeopleSlot(people){
+    let peopleHtml = "<ul>"
+    for (let i = 0; i < people.length; i++){
+        peopleHtml = peopleHtml + `<li>${people[i].lastname}</li>`
+    }
+    peopleHtml = peopleHtml + "</ul>"
+    peopleSlot.innerHTML = peopleHtml
+}
 init()

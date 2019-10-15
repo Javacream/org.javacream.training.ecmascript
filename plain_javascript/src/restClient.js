@@ -1,0 +1,1 @@
+fetch("http://172.17.9.17:8080/people/2").then((result) => result.json()).then((person) => alert(person.lastname))
