@@ -3,10 +3,10 @@ function simple(){
     let names = ["Hugo", "Emil", "Fritz"]
     demoString(message)
     console.log(message)
-    demoList(list)
-    console.log(list[0])
-    demoList2(list)
-    console.log(list[0])
+    demoList( names)
+    console.log(names[0])
+    demoList2(names)
+    console.log(names[0])
 }
 function demoString(p){
     console.log(p)
