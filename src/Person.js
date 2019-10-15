@@ -7,9 +7,10 @@ class Person{
         this.firstname = f 
         this.gender = g
         this.height = h
+        this.info = this.info.bind(this)
     }
 
-    info= function(){
+    info(){
         return `Lastname: ${this.lastname}, Firstname: ${this.firstname}`
     } 
 
