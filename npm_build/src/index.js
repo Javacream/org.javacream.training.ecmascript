@@ -1,4 +1,4 @@
-import {demo as sum, Person} from './otherFile.js';
+import {demo as sum, Person} from './demo.js';
 
 console.log(sum(20, 22));
 let p = new Person ("Meier")
