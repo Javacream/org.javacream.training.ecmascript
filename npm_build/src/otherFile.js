@@ -15,7 +15,7 @@ constructor(name){
 this.name = name
 }
 
-greet() {
+greet = () => {
 return `Hello from ${this.name}`
 }
 }
