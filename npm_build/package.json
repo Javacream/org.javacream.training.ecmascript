@@ -18,5 +18,9 @@
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "people": "^1.0.0",
+    "pubsub-js": "^1.7.0"
   }
 }

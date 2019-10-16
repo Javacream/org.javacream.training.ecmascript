@@ -1,21 +1,10 @@
-/*
-export default function (a, b) {
-  return a + b;
-};
-
-*/
-
-export let demo = (a, b) => {
-	return a + b
+let demo = (a, b) => {
+	return private_demo(a, b)
 }
 
-export class Person{
-
-constructor(name){
-this.name = name
+let private_demo = (a, b) => {
+	return a - b
 }
 
-greet = () => {
-return `Hello from ${this.name}`
-}
-}
+export{demo}
+
