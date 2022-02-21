@@ -49,4 +49,6 @@ Array.prototype.size = function(){
 
 console.log(names2.size())
 
+console.log(Object.getOwnPropertyNames(names))
+
 
