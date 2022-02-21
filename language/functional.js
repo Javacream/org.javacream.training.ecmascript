@@ -30,3 +30,9 @@ let person = {
 console.log(person.lastname)
 person.say_hello()
 console.log(person)
+
+
+//Die Arrow-Syntax für Funktionen, eine andere Form des Funktions-Literals
+demo = () =>{
+    console.log("called demo, no params, arguments " + arguments.length)
+}
