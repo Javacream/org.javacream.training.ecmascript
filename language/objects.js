@@ -29,8 +29,24 @@ let p1 = new Person("Schneider", "Hanna")
 let p2 = new Person("Meier", "Josef")
 p1.height = 177
 p1.greet = function(){return "egal"}
-console.log(p1.greet())
-console.log(p2.greet())
+//console.log(p1.greet())
+//console.log(p2.greet())
 
 Person.prototype.demo = function(){return "from demo"}
-console.log(p1.demo())
+//console.log(p1.demo())
+
+
+let names = ["Hugo", "Emil"]
+names.push("Fritz")
+//console.log(names.length)
+
+let names2 = ["Hans"]
+//console.log(names2.length())
+
+Array.prototype.size = function(){
+    return this.length
+}
+
+console.log(names2.size())
+
+
