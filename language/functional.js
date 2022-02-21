@@ -18,3 +18,15 @@ demo = function(){
 demo()
 demo('Hello')
 demo('Hello', 42)
+
+
+let person = {
+    lastname: "Sawitzki", 
+    say_hello: function(){
+        console.log("Hello")
+    }
+}
+
+console.log(person.lastname)
+person.say_hello()
+console.log(person)
