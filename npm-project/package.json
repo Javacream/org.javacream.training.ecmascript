@@ -1,0 +1,15 @@
+{
+  "name": "simple.project",
+  "version": "1.0.0",
+  "description": "a simple training project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}

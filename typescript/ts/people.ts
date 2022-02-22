@@ -1,11 +1,13 @@
 class Person{
-  name:string
+  lastname:string
   height:number
-  constructor(name:string, height:number){
-    this.name = name
+  firstname:string
+  constructor(lastname:string, firstname:string, height:number){
+    this.lastname = lastname
     this.height = height
+    this.firstname = firstname
   }
   sayHello():string{
-    return "Hello, my name is " + this.name
+    return "Hello, my name is " + this.lastname
   }
 }
