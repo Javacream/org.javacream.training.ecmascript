@@ -27,3 +27,17 @@ Person.prototype.say_hi = function(){return "Hi"}
 console.log(p.say_hi())
 
 
+class Student extends Person{
+    constructor(lastname, firstname, university){
+        super(lastname, firstname)
+        this.university = university
+    }
+
+    study(){
+        return `${this.greet()}, i study at ${this.university}`
+    }
+}
+
+
+let s1 = new Student("Einstein", "Alberta", "LMU")
+console.log(s1)
