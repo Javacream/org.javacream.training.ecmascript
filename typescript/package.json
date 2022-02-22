@@ -1,0 +1,32 @@
+{
+  "name": "org.javacream.training.typescript",
+  "version": "1.0.0",
+  "description": "Training project for TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc --outDir ./dist -p .",
+    "compile-watch": "tsc -w --outDir ./dist -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JavacreamTraining/org.javacream.training.node.typescript.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "JavaScript",
+    "Node"
+  ],
+  "author": "Rainer Sawitzki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JavacreamTraining/org.javacream.training.node.typescript/issues"
+  },
+  "homepage": "https://github.com/JavacreamTraining/org.javacream.training.node.typescript#readme",
+  "devDependencies": {
+    "@types/node": "^9.3.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "commonjs": "0.0.1"
+  }
+}
