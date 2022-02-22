@@ -26,9 +26,10 @@ let arrow = () => {
 }
 
 let p = new Person("Eg", "Al")
+let p2 = new Person("Auch", "Egal")
 
 print_info(classic)
 print_info(arrow)
 print_info(p.say_hi)
-console.log(p.greet())
 print_info(p.greet)
+print_info(p2.greet)
