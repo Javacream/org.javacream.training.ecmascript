@@ -3,9 +3,9 @@ let Person = class {
     constructor(lastname, firstname){
         this.lastname = lastname
         this.firstname = firstname
-        this.greet = () => {
-            return `Hello, my name is ${this.lastname}`
-        }
+    }
+    greet = () => {
+        return `Hello, my name is ${this.lastname}`
     }
     say_hi(){
         return "info from a person instance"
